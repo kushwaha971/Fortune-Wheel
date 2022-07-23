@@ -1,16 +1,16 @@
 li:first-child .text{
     background-color: green;
 }
-li:nth-child(2) .text{
+li:nth-child(3) .text{
     background-color: rgb(242, 237, 164);
 }
-li:nth-child(3) .text{
+li:nth-child(4) .text{
     background-color: rgb(197, 185, 10);
 }
-li:nth-child(4) .text{
+li:nth-child(5) .text{
     background-color: rgb(102, 111, 5);
 }
-li:nth-child(5) .text{
+li:nth-child(6) .text{
     background-color: rgb(17, 138, 35);
 }
 
@@ -29,18 +29,20 @@ li:nth-child(4){
 li:nth-child(5){
     transform: rotate(288deg) skewY(-10deg);
 }
+li:nth-child(6){
+    transform: rotate(360deg) skewY(-10deg);
+}
 .circle{
 
-    width: 350px;
-    height: 363px;
+    width: 300px;
+    height: 300px;
     border: 1px solid black; 
-    position: relative;
     padding: 0;
-    margin: 16px auto;
-
+    margin: 0px;
     border-radius: 50%;
     list-style: none;
     overflow: hidden; 
+    margin-left: 3%;
 }
 
 li{
@@ -62,7 +64,7 @@ li{
     display: block;
     transform: skewY(10deg) rotate(36deg);
     padding-top: 20px;
-    cursor: pointer;
+  
     font-weight: bold;
     font-size: 18px;
 
@@ -73,11 +75,11 @@ li{
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    margin-top: 140px;
-    border-top: 25px solid black;
-    position: absolute;
-    left: 46%;
-    top: -12px;
+    margin-top: 0px;
+    margin-left: 150px;
+    border-top: 10px solid black;
+    left: 50%;
+    top: -10px;
     z-index: 1;
 }
 
@@ -86,11 +88,12 @@ li{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin-top: 150px;
+    margin-top: 130px;
+    margin-left: 8px;
     outline: none;
     cursor: pointer;
-    left: 42%;
-    color: rgb(132, 33, 33);
+    left: 40%;
+   
     font-size: 20px;
     z-index: 1;
 

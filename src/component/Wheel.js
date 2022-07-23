@@ -51,13 +51,15 @@ function Wheel({ open, setOpen }) {
         </div>
         <Box
           sx={{
-            height: "50vh",
+            height: "auto",
+            width:'auto',
             backgroundColor: "#bdbdbd",
           }}
         >
           <div>
-            <div className="arrow"></div>
+          <div className="arrow"></div>
             <ul className={name}>
+            
               <button className="spin-button" onClick={startRotation}>
                 Spin
               </button>
@@ -104,8 +106,8 @@ function Wheel({ open, setOpen }) {
           Tap to Stop
         </Button>
       </Container>
-      {/* 
-      <Dialog fullScreen open={jackpot} onClose={Close}>
+      
+      {/* <Dialog fullScreen open={jackpot} onClose={Close}>
         <Jackpot jackpot={jackpot} setJackpot={setJackpot} />
       </Dialog> */}
     </SpineStyle>
