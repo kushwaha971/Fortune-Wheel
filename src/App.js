@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React  from 'react';
 import './App.css';
+import Wheel from './component/Wheel';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import { Button, Dialog } from '@mui/material';
+
+// const offers = ['10%','20%','30%','50%','90%']
+// const [discount,setDiscount] = useState(offers);
 
 function App() {
+  const [open, setOpen] = React.useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Dialog
+        fullScreen={fullScreen}
+        open={open}
+        onClose={handleClose}
+      >   <Wheel  open = {open} setOpen={setOpen}/></Dialog>
+       <Button variant="outlined" onClick={handleClickOpen}>
+        Wheel of Fortune- Low Engagement
+      </Button>
+  
     </div>
   );
 }

@@ -1,0 +1,113 @@
+li:first-child .text{
+    background-color: green;
+}
+li:nth-child(2) .text{
+    background-color: rgb(242, 237, 164);
+}
+li:nth-child(3) .text{
+    background-color: rgb(197, 185, 10);
+}
+li:nth-child(4) .text{
+    background-color: rgb(102, 111, 5);
+}
+li:nth-child(5) .text{
+    background-color: rgb(17, 138, 35);
+}
+
+li:first-child{
+    transform: rotate(0deg) skewY(-10deg);
+}
+li:nth-child(2){
+    transform: rotate(72deg) skewY(-10deg);
+}
+li:nth-child(3){
+    transform: rotate(144deg) skewY(-10deg);
+}
+li:nth-child(4){
+    transform: rotate(216deg) skewY(-10deg);
+}
+li:nth-child(5){
+    transform: rotate(288deg) skewY(-10deg);
+}
+.circle{
+
+    width: 350px;
+    height: 363px;
+    border: 1px solid black; 
+    position: relative;
+    padding: 0;
+    margin: 16px auto;
+
+    border-radius: 50%;
+    list-style: none;
+    overflow: hidden; 
+}
+
+li{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+
+}
+.text{
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    text-align: center;
+    display: block;
+    transform: skewY(10deg) rotate(36deg);
+    padding-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    margin-top: 140px;
+    border-top: 25px solid black;
+    position: absolute;
+    left: 46%;
+    top: -12px;
+    z-index: 1;
+}
+
+.spin-button{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 150px;
+    outline: none;
+    cursor: pointer;
+    left: 42%;
+    color: rgb(132, 33, 33);
+    font-size: 20px;
+    z-index: 1;
+
+}
+.start-rotation{
+    animation: start-rotation 1s linear infinite;
+}
+@keyframes start-rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+    
+} 
+
+.stop-rotate{
+    animation-play-state: paused;
+}
+
+
+
