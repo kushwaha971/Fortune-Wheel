@@ -1,16 +1,16 @@
 li:first-child .text{
     background-color: green;
 }
-li:nth-child(3) .text{
+li:nth-child(2) .text{
     background-color: rgb(242, 237, 164);
 }
-li:nth-child(4) .text{
+li:nth-child(3) .text{
     background-color: rgb(197, 185, 10);
 }
-li:nth-child(5) .text{
+li:nth-child(4) .text{
     background-color: rgb(102, 111, 5);
 }
-li:nth-child(6) .text{
+li:nth-child(5) .text{
     background-color: rgb(17, 138, 35);
 }
 
@@ -29,9 +29,7 @@ li:nth-child(4){
 li:nth-child(5){
     transform: rotate(288deg) skewY(-10deg);
 }
-li:nth-child(6){
-    transform: rotate(360deg) skewY(-10deg);
-}
+
 .circle{
 
     width: 300px;

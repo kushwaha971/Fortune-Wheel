@@ -28,7 +28,7 @@ const SpineStyle = styled(Box)(({ theme }) => ({
 }));
 
 function Wheel({ open, setOpen }) {
-  const [name, setName] = useState("circle");
+  const [name, setName] = useState("circle  start-rotation stop-rotate");
   const startRotation = () => {
     setName("circle start-rotation");
   };
